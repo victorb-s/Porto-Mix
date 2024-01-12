@@ -1,0 +1,156 @@
+body, html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+    max-width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@font-face{
+    font-family: 'PoppinsMedium';
+    src: url("fonts/FontsFree-Net-Poppins-Medium.ttf");
+}
+
+@font-face{
+    font-family: 'Krisha';
+    src: url('fonts/Krisha-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Lovelo';
+    src: url('../fonts/Lovelo Black.otf');
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+*{
+    scrollbar-width: auto;
+    scrollbar-color: #030303 #ffffff;
+}
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #030303;
+    border-radius: 19px;
+    border: 3px solid #ffffff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: black;
+}
+
+header img{
+    width: 60px;
+    padding-left: 50px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li{
+    padding-right: 50px;
+    font-family: PoppinsMedium;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all ease;
+}
+
+header nav ul li a:hover{
+    border-bottom: white 2px solid;
+}
+
+.secone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.secone-content{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secone-content img{
+    width: 600px;
+}
+
+.secone-content p{
+    width: 35%;
+    font-family: PoppinsMedium;
+    text-align: center;
+    font-size: 16px;
+}
+
+.divisorx{
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0px auto 1em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    width: 87%;
+
+}
+
+.divisorx::before, .divisorx::after {
+    border-top: 2px solid rgb(73, 73, 73);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 100%;
+}
+
+.secsec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 110vh;
+}
+
+.secsec-content{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secsec-text p{
+    width: 80%;
+    padding-left: 60px;
+    font-family: PoppinsMedium;
+    text-align: center;
+    font-size: 16px;
+}
